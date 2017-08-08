@@ -1,0 +1,15 @@
+#!/bin/bash
+ls -l *.sh
+for i in *.sh
+do
+ mv ${i} ${HOME}/Scratch/exercise-01-02/tmp
+done
+
+cd ${HOME}/Scratch/exercise-01-02/tmp
+
+for i in *.sh
+do
+ chmod +x ${i}
+done
+
+ls -l
